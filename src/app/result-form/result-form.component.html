@@ -1,0 +1,8 @@
+<div class="result-container">
+  <h1>Your BMI Result</h1>
+  <div class="bmi-value">{{ bmi }}</div>
+  <div [ngClass]="bmiCategory">
+    <img [src]="imageSrc" alt="BMI Category" class="animated-image" />
+    <p>{{ bmiMessage }}</p>
+  </div>
+</div>

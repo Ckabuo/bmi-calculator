@@ -1,0 +1,22 @@
+<div class="input-container">
+  <h1>Futuristic BMI Calculator</h1>
+  <form (ngSubmit)="calculateBMI()">
+    <div>
+      <label for="weight">Weight:</label>
+      <input id="weight" [(ngModel)]="weight" name="weight" required />
+      <select [(ngModel)]="weightUnit" name="weightUnit">
+        <option value="kg">kg</option>
+        <option value="lb">lb</option>
+      </select>
+    </div>
+    <div>
+      <label for="height">Height:</label>
+      <input id="height" [(ngModel)]="height" name="height" required />
+      <select [(ngModel)]="heightUnit" name="heightUnit">
+        <option value="cm">cm</option>
+        <option value="in">in</option>
+      </select>
+    </div>
+    <button type="submit">Calculate BMI</button>
+  </form>
+</div>

@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+.input-container, .result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+form, .bmi-value {
+  margin: 20px 0;
+}
+
+input, select, button {
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background: #1c92d2;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0f72a7;
+}
+
+.animated-image {
+  width: 200px;
+  height: 200px;
+  animation: float 2s infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.underweight img { background: #00a8ff; }
+.normal img { background: #44bd32; }
+.overweight img { background: #fbc531; }
+.obese img { background: #e84118; }
